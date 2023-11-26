@@ -3,13 +3,13 @@ public class Main {
         Animal[] animals = new Animal[6];
         animals[0] = new Bird("Hey",2,2.3,"Yellow");
         animals[1] = new Blowfish("Dan",1,2,"red","blue");
+        animals[2] = new Dog("Sam",10,5,"black","bulldog");
+        animals[3] = new Mammal("brown");
         Blowfish bob = new Blowfish("Nik",1,2,"red","blue");
         animals[1].setName("Mike");
         animals[1].eat();
         bob.wop();
         bob.areFish();
-        animals[2] = new Dog("Sam",10,5,"black","bulldog");
-        animals[3] = new Mammal("brown");
         if(animals[2] instanceof Dog){
             ((Dog)animals[2]).myBread();
         }
